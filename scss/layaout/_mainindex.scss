@@ -1,0 +1,83 @@
+main {
+    background-image:url(../assets/imagenes/fondo_cancha.png);
+
+.titulo {
+    display: grid;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: rgb(85, 143, 160);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-items: center;
+}
+.cards-flexmain{
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 78px;
+    }
+   
+    .section-cards{
+        display:flex;
+        padding: 28px;
+        height: auto;
+        width:  100vw;
+        justify-content:space-evenly;
+        text-align: center;
+    }
+    .cardsfutbol5 {
+        color: white;
+        background-color: rgba(0, 0, 0);
+        border-radius: 15%;
+        transition: transform 0.4s;
+        padding: 20px;
+        }
+    
+        .cardsfutbol5:hover{
+        transform: scale(1.1); 
+        background-color: rgb(153, 154, 154);   
+        color: black;
+        }
+    li {
+        margin-bottom: 40px;
+        list-style-type: none;
+    }
+    
+    /*Actividades*/
+    .cardsactividades {
+        color: white;
+        background-color: black;
+        border-radius: 15%;
+        height: auto;
+        transition: transform 0.4s;
+        padding: 20px;
+        }
+    
+        .cardsactividades:hover{
+        transform: scale(1.1);
+        background-color: rgb(153, 154, 154);     
+        color: black;
+        }
+    
+    .actividades li {
+        list-style-type: none;
+    }
+    
+    .cardseventosdos {
+        color: white;
+        background-color: black;
+        border-radius: 15%;
+        transition: transform 0.4s;
+        padding: 20px;
+    }
+    .cardseventosdos:hover{
+        transform: scale(1.1); 
+        background-color: rgb(153, 154, 154);     
+        color: black;
+    }
+    .eventosdos li {
+        list-style-type: none;
+    }
+}

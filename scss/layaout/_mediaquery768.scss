@@ -1,0 +1,25 @@
+@media (max-width: 768px){ 
+    .menu{
+        font-size: 9px;
+    }
+    .grid-nosotros{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    .titulo{
+        font-size: 12px;
+    }
+    .cards-flexmain {
+    font-size: 10px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+    justify-content: center;
+    }
+    .cards-flexmainnovedades{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+} 

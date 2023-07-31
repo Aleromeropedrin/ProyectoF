@@ -1,0 +1,51 @@
+header {
+    background-image: url("../assets/imagenes/arco.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+.grid-nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        place-items: center;
+        align-items: center;
+        }
+.logo {
+    align-items: center;
+    width: 100px;
+    transition: transform 0.4s;
+    }
+
+.logo :hover{
+    transform: rotate(360deg);
+}
+
+/*Menu*/
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+.menu li {
+    float: left;
+    background-color: black;
+    justify-content: center;
+    margin: auto;
+    }
+
+.menu li a {
+    display: block;
+    color: rgb(249, 249, 249);
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    justify-content: center;
+    }
+
+.menu li a :hover {
+    background-color: rgb(85, 171, 197);
+    }
+}

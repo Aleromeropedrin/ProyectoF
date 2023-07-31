@@ -4,9 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESERVAS</title>
-    <link rel="stylesheet" href="../css/estilo.css">
-    <link rel="icon" type="image/x-icon" href="../assets/imagenes/logo.png">
+    <meta name="description" content="Reserva cancha de futbol cinco, parrillero y eventos.Los mejores precios">
+    <meta name="keywords" content="Salon eventos, canchas, danza, yoga, Montevideo-Uruguay">
+    <meta name="author" content="alejandro romero">
+    <meta name="copyrigth" content=" Futbol Cinco, eventos, crossfit , danza y yoga">
+    <meta propiedad= "og:título" contenido= Futbol cinco eventos danza y yoga >
+    <meta propiedad= "og:nombre_del_sitio" contenido= Complejo Centenario >
+    <meta propiedad= "og:url" contenido= "" >
+    <meta propiedad= "og:descripción " content= "" >
+    <meta propiedad= "og:type" content= sitio web >
+    <meta propiedad = "og:imagen" contenido = "" > 
+    <title>RESERVAS | Complejo Centenario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/imagenes/logo.ico">
 </head>
 
 <body>
@@ -31,49 +42,105 @@
                 <h1>COMPLEJO CENTENARIO</h1>
             </div>
             <div class="cards-flexmain">
-            <form action="mailto:alero@montetideo.com.uy" method="post" enctype="text/plain">
-                    <fieldset class="form">
-                        <h2>Rellenar formulario completo:</h2>
-                        <ul>
-                            <li>
-                                <label id="Nombre" for="Nombre">Nombre:</label>
-                                <input class="input" id="Nombre" type="text" required width="400px">
-                            </li>
-                            <li>
-                                <label id="primer" for="primer">Primer Apellido:</label>
-                                <input class="input" id="primer" type="text" required width="300px">
-                            </li>
-                            <label id="Segundo" for="Segundo">Segundo Apellido:</label>
-                            <input class="input" id="Segundo" type="text" required width="300px">
-                            <li>
-                                <label id="mail" for="mail">E-mail de contacto:</label>
-                                <input class="input" id="mail" type="text" name="mail" placeholder="" required
-                                    pattern="^[a - z0-9!#$%&'*+/=?^_ `{|}~-]+(?:\.[a - z0-9!#$%&'*+/=?^_ `{|}~-]+)*@(?:[a - z0-9-]* [a - z0-9-])?$">
-                            </li>
-                            <li>
-                                <label id="Mensaje" for="Mensaje">Mensaje: <span>*plantea tu reserva</span></label>
-                            </li>
-                            <li>
-                                <textarea class="input" id="Mensaje" name="Mensaje" cols="30" rows="10"
-                                    placeholder="Escribe tu mensaje...."></textarea>
-                            </li>
-                            <li>
-                                <div class="checkbox">
-                                    <input id="check" type="checkbox" required>
-                                    <a href="#">He leido y acepto la politica de privacidad</a>
-                                </div>
-                            </li>
-                            <li>
-                                <label for="contactar"></label>
-                                <button style="background-color: rgb(238, 167, 75);" type="submit">CONTACTAR</button>
-                            </li>
-                            <li>
-                                <label for="reset"></label>
-                                <button style="background-color: rgb(218, 212, 214); " type="submit">Reiniciar</button>
-                            </li>
-                        </ul>
-                    </fieldset>
-                </form>
+                <form class="row g-3 needs-validation custom-bg" novalidate>
+
+                    <div>
+        
+                        <h4>HAGA SU RESERVA OBTENGA DESCUENTOS</h4>
+        
+                        <p>POR MAS INFORMACION PUEDE CONTACTARNOS EN NUESTRAS REDES SOCIALES</p>
+        
+                    </div>
+        
+                    <div class="col-md-4 position-relative">
+        
+                      <label for="validationTooltip01" class="form-label">NOMBRE</label>
+        
+                      <input type="text" class="form-control" id="validationTooltip01" value="" required>
+        
+                      <div class="valid-tooltip">
+        
+                        Looks good!
+        
+                      </div>
+        
+                    </div>
+        
+                    <div class="col-md-4 position-relative">
+        
+                      <label for="validationTooltip02" class="form-label">APELLIDO</label>
+        
+                      <input type="text" class="form-control" id="validationTooltip02" value="" required>
+        
+                      <div class="valid-tooltip">
+        
+                        Looks good!
+        
+                      </div>
+        
+                    </div>
+        
+                    <div class="col-md-4 position-relative">
+        
+                        <label for="validationTooltip03" class="form-label">CIUDAD</label>
+        
+                        <input type="text" class="form-control" id="validationTooltip03" required>
+        
+                        <div class="invalid-tooltip">
+        
+                          Please provide a valid city.
+        
+                        </div>
+        
+                      </div>
+        
+                    <div class="col-md-8 position-relative">
+        
+                      <label for="validationTooltipUsername" class="form-label">CORREO ELECTRONICO</label>
+        
+                      <div class="input-group has-validation">
+        
+                        <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+        
+                        <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+        
+                        <div class="invalid-tooltip">
+        
+                          Please choose a unique and valid username.
+        
+                        </div>
+        
+                      </div>
+        
+                    </div>
+        
+         
+        
+                   
+        
+                 
+        
+                    <div class="col-md-4 position-relative">
+        
+                      <label for="validationTooltip05" class="form-label">TELEFONO</label>
+        
+                      <input type="text" class="form-control" id="validationTooltip05" required>
+        
+                      <div class="invalid-tooltip">
+        
+                        Please provide a valid zip.
+        
+                      </div>
+        
+                    </div>
+        
+                    <div class="col-12">
+        
+                      <button class="btn btn-primary" type="submit">ENVIAR</button>
+        
+                    </div>
+        
+                  </form>
             </div>
         </main>
         <footer>
@@ -98,6 +165,9 @@
             </div>
     </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 </body>
 
 </html>
