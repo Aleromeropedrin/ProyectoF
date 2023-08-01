@@ -1,82 +1,78 @@
 main {
-    background-image:url(../assets/imagenes/fondo_cancha.png);
+    background-image: url(../assets/imagenes/fondo_cancha.png);
 
-.titulo {
-    display: grid;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    background-color: rgb(85, 143, 160);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    justify-items: center;
-    align-items: center;
-}
-.cards-flexmain{
-    display:flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    padding: 78px;
+    .titulo {
+        display: grid;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background-color: #ff3ce1;
+        background-image: linear-gradient(36deg, #ff3ce1 0%, #7b3dae 50%, #3b607b 100%);
+        font-family: Arial, Helvetica, sans-serif;
+        justify-items: center;
+        align-items: center;
     }
-   
-    .section-cards{
-        display:flex;
+
+    .cards-flexmain {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding: 78px;
+    }
+
+    .section-cards {
+        display: flex;
         padding: 28px;
         height: auto;
-        width:  100vw;
-        justify-content:space-evenly;
+        width: 100vw;
+        justify-content: space-evenly;
         text-align: center;
     }
+
     .cardsfutbol5 {
-        color: white;
-        background-color: rgba(0, 0, 0);
+        color: $color-text-principal;
+        background-color:$backgroud-principal;
         border-radius: 15%;
         transition: transform 0.4s;
         padding: 20px;
-        }
-    
-        .cardsfutbol5:hover{
-        transform: scale(1.1); 
-        background-color: rgb(153, 154, 154);   
+    }
+
+    .cardsfutbol5:hover {
+        transform: scale(1.1);
+        background-color: rgb(153, 154, 154);
         color: black;
-        }
+    }
+
     li {
         margin-bottom: 40px;
         list-style-type: none;
     }
-    
+
     /*Actividades*/
     .cardsactividades {
-        color: white;
-        background-color: black;
-        border-radius: 15%;
-        height: auto;
-        transition: transform 0.4s;
-        padding: 20px;
-        }
-    
-        .cardsactividades:hover{
+        @extend .cardsfutbol5
+    }
+
+    .cardsactividades:hover {
         transform: scale(1.1);
-        background-color: rgb(153, 154, 154);     
+        background-color: rgb(153, 154, 154);
         color: black;
-        }
-    
+    }
+
     .actividades li {
         list-style-type: none;
     }
-    
+
     .cardseventosdos {
-        color: white;
-        background-color: black;
-        border-radius: 15%;
-        transition: transform 0.4s;
-        padding: 20px;
+        @extend .cardsfutbol5
     }
-    .cardseventosdos:hover{
-        transform: scale(1.1); 
-        background-color: rgb(153, 154, 154);     
+
+    .cardseventosdos:hover {
+        transform: scale(1.1);
+        background-color: rgb(153, 154, 154);
         color: black;
     }
+
     .eventosdos li {
         list-style-type: none;
     }

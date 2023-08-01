@@ -343,21 +343,6 @@ main {
     color: rgb(8, 38, 93);
 }
 
-FORMULARIO RESERVAS
-.form {
-    background-color: rgb(13, 13, 13);
-    width: 400px;
-    height: auto;
-    top: 25%;
-    left: 30%;
-    color: white;
-    text-align: center;
-}
-
-.form li {
-    list-style-type: none;
-    margin-bottom: 10px;
-}
 /*PIE DE PAG FIJO*/
 
 .cardspie {
@@ -399,7 +384,6 @@ footer {
         grid-template-columns: 1fr 10fr 1fr;
         grid-template-rows: 1fr;
     }
-
 }
 @media (max-width: 768px){ 
     .menu{
@@ -470,3 +454,4 @@ footer {
             padding: 10px;
             align-items: center;
         }
+    }

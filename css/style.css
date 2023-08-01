@@ -59,8 +59,8 @@ main .titulo {
   text-align: center;
   width: 100%;
   height: auto;
-  background-color: rgb(85, 143, 160);
-  color: white;
+  background-color: #ff3ce1;
+  background-image: linear-gradient(36deg, #ff3ce1 0%, #7b3dae 50%, #3b607b 100%);
   font-family: Arial, Helvetica, sans-serif;
   justify-items: center;
   align-items: center;
@@ -79,14 +79,14 @@ main .section-cards {
   justify-content: space-evenly;
   text-align: center;
 }
-main .cardsfutbol5 {
+main .cardsfutbol5, main .cardseventosdos, main .cardsactividades {
   color: white;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(21, 21, 21);
   border-radius: 15%;
   transition: transform 0.4s;
   padding: 20px;
 }
-main .cardsfutbol5:hover {
+main .cardsfutbol5:hover, main .cardseventosdos:hover, main .cardsactividades:hover {
   transform: scale(1.1);
   background-color: rgb(153, 154, 154);
   color: black;
@@ -94,14 +94,6 @@ main .cardsfutbol5:hover {
 main li {
   margin-bottom: 40px;
   list-style-type: none;
-}
-main .cardsactividades {
-  color: white;
-  background-color: black;
-  border-radius: 15%;
-  height: auto;
-  transition: transform 0.4s;
-  padding: 20px;
 }
 main .cardsactividades:hover {
   transform: scale(1.1);
@@ -111,13 +103,6 @@ main .cardsactividades:hover {
 main .actividades li {
   list-style-type: none;
 }
-main .cardseventosdos {
-  color: white;
-  background-color: black;
-  border-radius: 15%;
-  transition: transform 0.4s;
-  padding: 20px;
-}
 main .cardseventosdos:hover {
   transform: scale(1.1);
   background-color: rgb(153, 154, 154);
@@ -125,6 +110,104 @@ main .cardseventosdos:hover {
 }
 main .eventosdos li {
   list-style-type: none;
+}
+
+.cards-grid {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 78px;
+}
+.cards-grid .cardsbalon, .cards-grid .cardseventos, .cards-grid .cardsdanzayyoga {
+  align-self: center;
+  text-align: center;
+  color: rgb(50, 5, 5);
+  background-color: rgb(141, 238, 231);
+  border-radius: 10%;
+  font-family: sans-serif;
+  width: 200px;
+  height: auto;
+  padding-top: 62px;
+  transition: transform 0.4s;
+}
+.cards-grid .cardsbalon:hover, .cards-grid .cardseventos:hover, .cards-grid .cardsdanzayyoga:hover {
+  transform: scale(1.1);
+  background-color: rgb(153, 154, 154);
+  color: black;
+}
+.cards-grid .balon h2 {
+  font-size: 30px;
+  color: rgb(30, 31, 33);
+}
+.cards-grid .danzayyoga h2 {
+  font-size: 40px;
+  color: rgb(30, 31, 33);
+}
+.cards-grid .cardseventos h2 {
+  font-size: 35px;
+  color: rgb(30, 31, 33);
+}
+
+.cards-flexmainnovedades {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 30px;
+  justify-items: center;
+}
+.cards-flexmainnovedades .cardscontenedoruno {
+  display: inline-block;
+  width: 300px;
+  height: auto;
+  top: 35%;
+  left: 55%;
+}
+.cards-flexmainnovedades .cardstexto, .cards-flexmainnovedades .cardstextodos {
+  align-self: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(147, 155, 155);
+  border-radius: 10%;
+  font-family: sans-serif;
+  width: 200px;
+  height: auto;
+  padding-top: 90px;
+}
+.cards-flexmainnovedades .cardscontenedordos {
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  top: 115%;
+  left: 70%;
+}
+.cards-grid {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 78px;
+}
+.cards-grid .cardsvision, .cards-grid .cardsvalores, .cards-grid .cardsmision {
+  align-self: center;
+  text-align: center;
+  color: rgb(50, 5, 5);
+  background-color: rgb(141, 238, 231);
+  border-radius: 10%;
+  font-family: sans-serif;
+  width: 200px;
+  height: auto;
+  padding-top: 15px;
+}
+.cards-grid .cardsvision h2, .cards-grid .cardsvalores h2, .cards-grid .cardsmision h2 {
+  font-size: 30px;
+  color: rgb(8, 38, 93);
+}
+.cards-grid .mision h2 {
+  font-size: 30px;
+  color: rgb(8, 38, 93);
+}
+.cards-grid .valores h2 {
+  font-size: 30px;
+  color: rgb(8, 38, 93);
 }
 
 footer {
@@ -145,7 +228,7 @@ footer {
 .custom-bg {
   display: flex;
   color: white;
-  background-color: black;
+  background-color: rgb(21, 21, 21);
   border-radius: 10%;
   justify-items: center;
   place-items: center;
@@ -159,6 +242,80 @@ footer {
 
 .custom-bg h4 {
   color: cornflowerblue;
+}
+
+@media (max-width: 1024px) {
+  .grid-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .menu {
+    font-size: 12px;
+  }
+  .grid-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr;
+  }
+  .titulo {
+    font-size: 12px;
+  }
+  .cards-flexmain {
+    flex-direction: column;
+    font-size: 10px;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+  }
+  .cards-flexmainnovedades {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 425px) {
+  .menu {
+    font-size: 9px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 3px;
+    justify-content: center;
+    align-items: center;
+  }
+  .titulo {
+    font-size: 12px;
+  }
+  .section-cards {
+    flex-direction: column;
+    font-size: 10px;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+  }
+  .cards-grid {
+    flex-direction: column;
+    font-size: 10px;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+  }
+  .cards-flexmain {
+    flex-direction: column;
+    font-size: 10px;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+  }
+  .cards-flexmainnovedades {
+    flex-direction: column;
+    font-size: 10px;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+.cards-grid{
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 78px;
+
+.cardsvision {
+    align-self: center;
+    text-align: center;
+    color: rgb(50, 5, 5);
+    background-color: rgb(141, 238, 231);
+    border-radius: 10%;
+    font-family: sans-serif;
+    width: 200px;
+    height: auto;
+    padding-top: 15px;
+}
+
+.cardsvision h2 {
+    font-size: 30px;
+    color: rgb(8, 38, 93);
+}
+
+.cardsmision {
+   @extend .cardsvision;
+}
+
+.mision h2 {
+    font-size: 30px;
+    color: rgb(8, 38, 93);
+}
+
+
+.cardsvalores {
+    @extend .cardsvision;
+}
+
+.valores h2 {
+    font-size: 30px;
+    color: rgb(8, 38, 93);
+}
+}

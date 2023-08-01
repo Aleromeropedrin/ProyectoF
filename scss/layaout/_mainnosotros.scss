@@ -1,0 +1,49 @@
+.cards-grid{
+        display:flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding: 78px;
+
+
+.cardsbalon {
+    align-self: center;
+    text-align: center;
+    color: rgb(50, 5, 5);
+    background-color: rgb(141, 238, 231);
+    border-radius: 10%;
+    font-family: sans-serif;
+    width: 200px;
+    height: auto;
+    padding-top: 62px;
+    transition: transform 0.4s;
+}
+.cardsbalon:hover{
+    transform: scale(1.1); 
+    background-color: rgb(153, 154, 154);   
+    color: black;
+    }
+
+.balon h2 {
+    font-size: 30px;
+    color: rgb(30, 31, 33);
+}
+
+.cardsdanzayyoga {
+    @extend .cardsbalon;
+    }
+
+
+.danzayyoga h2 {
+    font-size: 40px;
+    color: rgb(30, 31, 33);
+}
+
+.cardseventos {
+    @extend .cardsbalon;
+}
+
+.cardseventos h2 {
+    font-size: 35px;
+    color: rgb(30, 31, 33);
+}
+}

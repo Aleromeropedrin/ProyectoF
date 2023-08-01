@@ -1,25 +1,28 @@
-@media (max-width: 768px){ 
-    .menu{
-        font-size: 9px;
-    }
-    .grid-nosotros{
-        display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
-    }
-
-    .titulo{
+@media (max-width: 768px) {
+    .menu {
         font-size: 12px;
     }
-    .cards-flexmain {
-    font-size: 10px;
-    display: flex;
-    padding: 20px;
-    justify-content: space-evenly;
-    justify-content: center;
+
+    .grid-nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr 1fr;
     }
-    .cards-flexmainnovedades{
+
+    .titulo {
+        font-size: 12px;
+    }
+
+    .cards-flexmain {
+        flex-direction: column;
+        font-size: 10px;
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .cards-flexmainnovedades {
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
     }
-} 
+}
