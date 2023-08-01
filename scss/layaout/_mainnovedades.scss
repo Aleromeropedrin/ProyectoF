@@ -1,7 +1,5 @@
 .cards-flexmainnovedades{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+   @include grid (1fr 1fr 1fr, 1fr,center);
     padding: 30px;
     justify-items: center;
 

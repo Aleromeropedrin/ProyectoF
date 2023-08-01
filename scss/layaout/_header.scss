@@ -4,9 +4,7 @@ header {
     background-size: cover;
 
 .grid-nosotros {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        @include grid (1fr 1fr 1fr,1fr,center);
         justify-items: center;
         place-items: center;
         align-items: center;
@@ -22,21 +20,17 @@ header {
 }
 
 /*Menu*/
-.menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    }
+nav {
 
-.menu li {
+li {
     float: left;
     background-color: black;
     justify-content: center;
     margin: auto;
+    list-style-type: none;
     }
 
-.menu li a {
+li a {
     display: block;
     color: rgb(249, 249, 249);
     text-align: center;
@@ -45,7 +39,8 @@ header {
     justify-content: center;
     }
 
-.menu li a :hover {
-    background-color: rgb(85, 171, 197);
+li :hover {
+    background-color: rgb(137, 172, 232);
     }
+}
 }

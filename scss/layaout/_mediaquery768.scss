@@ -4,8 +4,8 @@
     }
 
     .grid-nosotros {
-        display: grid;
-        grid-template-columns: 1fr 1fr 3fr 1fr;
+        @include grid (1fr 1fr 1fr,1fr,center);
+
     }
 
     .titulo {
@@ -13,11 +13,10 @@
     }
 
     .cards-flexmain {
-        flex-direction: column;
-        font-size: 10px;
         display: flex;
-        gap: 20px;
-        padding: 10px;
+        flex-direction:column;
+        font-size: 12px;
+        
     }
 
     .cards-flexmainnovedades {
@@ -25,4 +24,52 @@
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
     }
+    .cardsactividades{
+    align-self: center;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 10%;
+    font-family: sans-serif;
+    width: 150px;
+    height: auto;
+    padding-top: 62px;
+    }
+    .cardseventosdos{
+        align-self: center;
+        text-align: center;
+        color: white;
+    background-color: black;;
+        border-radius: 10%;
+        font-family: sans-serif;
+        width: 150px;
+        height: auto;
+        padding-top: 62px;
+        }
+        .cardsfutbol5{
+            align-self: center;
+            text-align: center;
+            color: white;
+            background-color: black;
+            border-radius: 10%;
+            font-family: sans-serif;
+            width: 150px;
+            height: auto;
+            padding-top: 62px;
+            }
+            .custom-bg {
+
+                display: flex;
+                color: $color-text-principal;
+                background-color: $backgroud-principal;
+                border-radius: 10%;
+                justify-items: center;
+                place-items: center;
+                align-items: center;
+                width: 650px;
+                height: auto;
+                font-weight: bold;
+                padding: 20px;
+                margin: 5px 0;
+            }
 }

@@ -1,7 +1,10 @@
 @media (max-width: 1024px){
-        .grid-nosotros{
-            display: grid;
-            grid-template-columns: 1fr 10fr 1fr;
-            grid-template-rows: 1fr;
-        }
+    .menu {
+        font-size: 19px;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 3px;
+        justify-content: center;
+        align-items: center;
+    }
 }
