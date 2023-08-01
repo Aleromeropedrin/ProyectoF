@@ -96,16 +96,10 @@ main .cardsactividades:hover {
   background-color: rgb(153, 154, 154);
   color: black;
 }
-main .actividades li {
-  list-style-type: none;
-}
 main .cardseventosdos:hover {
   transform: scale(1.1);
   background-color: rgb(153, 154, 154);
   color: black;
-}
-main .eventosdos li {
-  list-style-type: none;
 }
 
 .cards-grid {
@@ -117,8 +111,8 @@ main .eventosdos li {
 .cards-grid .cardsbalon, .cards-grid .cardseventos, .cards-grid .cardsdanzayyoga {
   align-self: center;
   text-align: center;
-  color: rgb(50, 5, 5);
-  background-color: rgb(141, 238, 231);
+  color: white;
+  background-color: rgb(147, 156, 98);
   border-radius: 10%;
   font-family: sans-serif;
   width: 200px;
@@ -131,22 +125,13 @@ main .eventosdos li {
   background-color: rgb(153, 154, 154);
   color: black;
 }
-.cards-grid .balon h2 {
+.cards-grid h2 {
   font-size: 30px;
   color: rgb(30, 31, 33);
 }
-.cards-grid .danzayyoga h2 {
-  font-size: 40px;
-  color: rgb(30, 31, 33);
-}
-.cards-grid .cardseventos h2 {
-  font-size: 35px;
-  color: rgb(30, 31, 33);
-}
-
 .cards-flexmainnovedades {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   justify-content: center;
   padding: 30px;
@@ -262,50 +247,63 @@ footer {
     justify-content: center;
   }
   .titulo {
-    font-size: 12px;
+    font-size: 19px;
   }
-  .cards-flexmain {
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-  }
-  .cards-flexmainnovedades {
+  .section-cards {
     display: grid;
+    grid-template-columns: repeat 200px, 100px, 100px;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    width: 200vw;
+    height: 100%;
+    align-self: center;
   }
   .cardsactividades {
     align-self: center;
     text-align: center;
     color: white;
-    background-color: black;
+    background-color: rgb(21, 21, 21);
     border-radius: 10%;
     font-family: sans-serif;
-    width: 150px;
+    width: 200px;
     height: auto;
-    padding-top: 62px;
+    padding-top: 82px;
   }
-  .cardseventosdos {
-    align-self: center;
-    text-align: center;
-    color: white;
-    background-color: black;
-    border-radius: 10%;
-    font-family: sans-serif;
-    width: 150px;
-    height: auto;
-    padding-top: 62px;
+  .cards-grid {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    padding: 78px;
+    column-gap: 15px;
   }
   .cardsfutbol5, main .cardsactividades, main .cardseventosdos {
     align-self: center;
     text-align: center;
     color: white;
-    background-color: black;
+    background-color: rgb(21, 21, 21);
     border-radius: 10%;
     font-family: sans-serif;
-    width: 150px;
+    width: 200px;
     height: auto;
-    padding-top: 62px;
+    padding-top: 82px;
+  }
+  .cards-flexmain {
+    display: grid;
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+  }
+  .cardseventosdos {
+    align-self: center;
+    text-align: center;
+    color: white;
+    background-color: rgb(21, 21, 21);
+    border-radius: 10%;
+    font-family: sans-serif;
+    width: 200px;
+    height: auto;
+    padding-top: 75px;
+    gap: 20px;
   }
   .custom-bg {
     display: flex;
@@ -322,7 +320,7 @@ footer {
     margin: 5px 0;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 580px) {
   .menu {
     font-size: 12px;
     display: flex;
@@ -334,22 +332,79 @@ footer {
   .titulo {
     font-size: 12px;
   }
+  .cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 58px;
+    gap: 10px;
+  }
   .section-cards {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 78px;
+  }
+  .cards-flexmainnovedades {
+    flex-direction: column;
+    font-size: 10px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+  }
+  .cards-flexmain {
+    display: flex;
     flex-direction: column;
     font-size: 12px;
+    align-items: center;
+  }
+  .custom-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: rgb(21, 21, 21);
+    border-radius: 10%;
+    justify-items: center;
+    place-items: center;
+    align-items: center;
+    width: 80vw;
+    height: 100%;
+    font-weight: bold;
+    padding: 20px;
+    margin: 5px 0;
+  }
+}
+@media (max-width: 425px) {
+  .menu {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 3px;
+    justify-content: center;
+    align-items: center;
+  }
+  .titulo {
+    font-size: 16px;
+  }
+  .section-cards {
+    flex-direction: column;
+    font-size: 16px;
     display: flex;
     gap: 10px;
     padding: 10px;
   }
   .cards-grid {
     flex-direction: column;
-    font-size: 12px;
+    font-size: 16px;
     display: flex;
     gap: 10px;
   }
   .cards-flexmain {
     flex-direction: column;
-    font-size: 12px;
+    font-size: 16px;
     display: flex;
   }
   .cards-flexmainnovedades {
@@ -362,17 +417,85 @@ footer {
   }
   .custom-bg {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: white;
     background-color: rgb(21, 21, 21);
     border-radius: 10%;
     justify-items: center;
     place-items: center;
     align-items: center;
-    width: 300px;
+    width: 280px;
     height: auto;
     font-weight: bold;
     padding: 20px;
     margin: 5px 0;
+  }
+}
+@media (max-width: 320px) {
+  .menu {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 3px;
+    justify-content: center;
+    align-items: center;
+  }
+  .titulo {
+    font-size: 12px;
+  }
+  .cards-grid {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 78px;
+  }
+  .section-cards {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 78px;
+  }
+  .cards-flexmainnovedades {
+    flex-direction: column;
+    font-size: 10px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+  }
+  .cards-flexmain {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    align-items: center;
+  }
+  .custom-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: rgb(21, 21, 21);
+    border-radius: 10%;
+    justify-items: center;
+    place-items: center;
+    align-items: center;
+    width: 80vw;
+    height: 100%;
+    font-weight: bold;
+    padding: 20px;
+    margin: 5px 0;
+  }
+  .cardsfutbol5, main .cardsactividades, main .cardseventosdos {
+    align-self: center;
+    text-align: center;
+    color: white;
+    background-color: rgb(21, 21, 21);
+    border-radius: 10%;
+    font-family: sans-serif;
+    width: 200px;
+    height: auto;
+    padding-top: 15px;
   }
 }
 

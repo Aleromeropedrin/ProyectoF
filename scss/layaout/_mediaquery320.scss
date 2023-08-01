@@ -1,6 +1,6 @@
-@media (max-width: 425px) {
+@media (max-width: 320px) {
     .menu {
-        font-size: 16px;
+        font-size: 12px;
         display: flex;
         flex-direction: column;
         padding: 10px 3px;
@@ -9,28 +9,21 @@
     }
 
     .titulo {
-        font-size: 16px;
-    }
-
-    .section-cards {
-        flex-direction: column;
-        font-size: 16px;
-        display: flex;
-        gap: 10px;
-        padding: 10px;
+        font-size: 12px;
     }
 
     .cards-grid {
-        flex-direction: column;
-        font-size: 16px;
         display: flex;
-        gap: 10px;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding: 78px;
     }
 
-    .cards-flexmain {
-        flex-direction: column;
-        font-size: 16px;
+    .section-cards {
         display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding: 78px;
     }
 
     .cards-flexmainnovedades {
@@ -39,6 +32,13 @@
         display: flex;
         gap: 10px;
         padding: 10px;
+        align-items: center;
+    }
+
+    .cards-flexmain {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
         align-items: center;
     }
 
@@ -52,10 +52,22 @@
         justify-items: center;
         place-items: center;
         align-items: center;
-        width: 280px;
-        height: auto;
+        width: 80vw;
+        height: 100%;
         font-weight: bold;
         padding: 20px;
         margin: 5px 0;
+    }
+
+    .cardsfutbol5 {
+        align-self: center;
+        text-align: center;
+        color: $color-text-principal;
+        background-color: $backgroud-principal;
+        border-radius: 10%;
+        font-family: sans-serif;
+        width: 200px;
+        height: auto;
+        padding-top: 15px;
     }
 }

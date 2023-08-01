@@ -4,72 +4,88 @@
     }
 
     .grid-nosotros {
-        @include grid (1fr 1fr 1fr,1fr,center);
-
+        @include grid (1fr 1fr 1fr, 1fr, center);
     }
 
     .titulo {
-        font-size: 12px;
+        font-size: 19px;
+    }
+
+    .section-cards {
+        display: grid;
+        grid-template-columns: repeat (200px, 100px, 100px);
+        grid-template-rows: 1fr;
+        column-gap: 20px;
+        width: 200vw;
+        height: 100%;
+        align-self: center;
+    }
+
+    .cardsactividades {
+        align-self: center;
+        text-align: center;
+        color: $color-text-principal;
+        background-color: $backgroud-principal;
+        border-radius: 10%;
+        font-family: sans-serif;
+        width: 200px;
+        height: auto;
+        padding-top: 82px;
+    }
+
+    .cards-grid {
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        padding: 78px;
+        column-gap: 15px;
+    }
+
+    .cardsfutbol5 {
+        align-self: center;
+        text-align: center;
+        color: $color-text-principal;
+        background-color: $backgroud-principal;
+        border-radius: 10%;
+        font-family: sans-serif;
+        width: 200px;
+        height: auto;
+        padding-top: 82px;
     }
 
     .cards-flexmain {
-        display: flex;
-        flex-direction:column;
-        font-size: 12px;
-        
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 20px;
     }
 
-    .cards-flexmainnovedades {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
-    .cardsactividades{
-    align-self: center;
-    text-align: center;
-    color: white;
-    background-color: black;
-    border-radius: 10%;
-    font-family: sans-serif;
-    width: 150px;
-    height: auto;
-    padding-top: 62px;
-    }
-    .cardseventosdos{
+    .cardseventosdos {
         align-self: center;
         text-align: center;
-        color: white;
-    background-color: black;;
+        color: $color-text-principal;
+        background-color: $backgroud-principal;
         border-radius: 10%;
         font-family: sans-serif;
-        width: 150px;
+        width: 200px;
         height: auto;
-        padding-top: 62px;
-        }
-        .cardsfutbol5{
-            align-self: center;
-            text-align: center;
-            color: white;
-            background-color: black;
-            border-radius: 10%;
-            font-family: sans-serif;
-            width: 150px;
-            height: auto;
-            padding-top: 62px;
-            }
-            .custom-bg {
+        padding-top: 75px;
+        gap: 20px;
+    }
 
-                display: flex;
-                color: $color-text-principal;
-                background-color: $backgroud-principal;
-                border-radius: 10%;
-                justify-items: center;
-                place-items: center;
-                align-items: center;
-                width: 650px;
-                height: auto;
-                font-weight: bold;
-                padding: 20px;
-                margin: 5px 0;
-            }
+    .custom-bg {
+        display: flex;
+        color: $color-text-principal;
+        background-color: $backgroud-principal;
+        border-radius: 10%;
+        justify-items: center;
+        place-items: center;
+        align-items: center;
+        width: 650px;
+        height: auto;
+        font-weight: bold;
+        padding: 20px;
+        margin: 5px 0;
+    }
+
 }

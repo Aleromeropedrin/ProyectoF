@@ -59,11 +59,7 @@ main {
         color: black;
     }
 
-    .actividades li {
-        list-style-type: none;
-    }
-
-    .cardseventosdos {
+   .cardseventosdos {
         @extend .cardsfutbol5
     }
 
@@ -71,9 +67,5 @@ main {
         transform: scale(1.1);
         background-color: rgb(153, 154, 154);
         color: black;
-    }
-
-    .eventosdos li {
-        list-style-type: none;
     }
 }
