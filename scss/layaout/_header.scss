@@ -1,17 +1,16 @@
-header {
-    background-image: url("../assets/imagenes/arco.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 
 .grid-nosotros {
-        @include grid (1fr 1fr 1fr,1fr,center);
+        @include grid (1fr 2fr 1fr ,1fr,center);
         justify-items: center;
         place-items: center;
         align-items: center;
-        }
+        height: 180px;
+        background-color: $backgroud-principal;
+
 .logo {
     align-items: center;
-    width: 100px;
+    width: 180px;
+    height:auto;
     transition: transform 0.4s;
     }
 
@@ -21,6 +20,13 @@ header {
 
 /*Menu*/
 nav {
+    ul{
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    }
 
 li {
     float: left;
@@ -40,7 +46,8 @@ li a {
     }
 
 li :hover {
-    background-color: rgb(137, 172, 232);
-    }
+    background-color: #0ee696;
+    color:black;
+}
 }
 }

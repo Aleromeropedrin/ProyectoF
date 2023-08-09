@@ -1,21 +1,19 @@
 .custom-bg {
-
     display: flex;
     color: $color-text-principal;
-    background-color: $backgroud-principal;
+    background-color:$backgroud-principal; 
     border-radius: 10%;
     justify-items: center;
     place-items: center;
+    justify-content: center;
     align-items: center;
-    width: 430px;
+    width: 480px;
     height: auto;
     font-weight: bold;
     padding: 20px;
-    margin: 5px 0;
+    margin: 25px 425px;
 }
 
 .custom-bg h4 {
-
     color: cornflowerblue;
-
 }

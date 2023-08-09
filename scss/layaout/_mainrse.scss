@@ -1,42 +1,39 @@
-.cards-grid{
-    display:flex;
+.cards-rse{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
-    justify-content: space-evenly;
-    padding: 78px;
+    padding: 30px;
+    justify-items: center;
+    gap: 25px;
 
-.cardsvision {
+.imgvision{
+    width: 400px;
+    height: 280px;
+    border-radius: 10%;
+    }
+.visiontexto {
     align-self: center;
     text-align: center;
     color: rgb(50, 5, 5);
     background-color: rgb(141, 238, 231);
     border-radius: 10%;
     font-family: sans-serif;
-    width: 200px;
-    height: auto;
+    width: 400px;
+    height: 280px;
     padding-top: 15px;
-}
-
-.cardsvision h2 {
     font-size: 30px;
     color: rgb(8, 38, 93);
+    
 }
-
 .cardsmision {
-   @extend .cardsvision;
+    @extend .imgvision;
+}
+.misiontexto {
+    @extend .visiontexto;
 }
 
-.mision h2 {
-    font-size: 30px;
-    color: rgb(8, 38, 93);
-}
-
-
-.cardsvalores {
-    @extend .cardsvision;
-}
-
-.valores h2 {
-    font-size: 30px;
-    color: rgb(8, 38, 93);
+.valorestexto {
+    @extend .visiontexto;
 }
 }

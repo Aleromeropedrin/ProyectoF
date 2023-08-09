@@ -1,35 +1,48 @@
-main {
-    background-image: url(../assets/imagenes/fondo_cancha.png);
-
+.fondo {
+    background-color: $backgroud-principal;
+}
     .titulo {
         display: grid;
-        text-align: center;
         width: 100%;
         height: auto;
-        background-color: #ff3ce1;
-        background-image: linear-gradient(36deg, #ff3ce1 0%, #7b3dae 50%, #3b607b 100%);
+        color: black;
+        background-color: #0ee696;
         font-family: Arial, Helvetica, sans-serif;
         justify-items: center;
         align-items: center;
     }
-
-    .cards-flexmain {
-        display: flex;
-        justify-content: center;
-        justify-content: space-evenly;
-        padding: 78px;
+    .textoinicio{
+        background-color: rgb(6, 6, 88);
+        color: white;
+        font-size:25px;
+        border-radius: 10%;
+        text-align: center;
+        padding: 10px;
+        width: 520px;
+        padding-top: 15px;
     }
 
+    .cards-flexmain {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 20px;
+        padding-top: 65px;
+        }
+
+    .complejo{
+    width: 700px;
+    height: 500px;
+    border-radius: 10%;
+    padding: 20px;
+    }
     .section-cards {
         display: flex;
         padding: 28px;
         height: auto;
-        width: 100vw;
-        justify-content: space-evenly;
-        text-align: center;
+        width: 100%;
     }
 
-    .cardsfutbol5 {
+.cardsfutbol5 {
         color: $color-text-principal;
         background-color:$backgroud-principal;
         border-radius: 15%;
@@ -68,4 +81,3 @@ main {
         background-color: rgb(153, 154, 154);
         color: black;
     }
-}

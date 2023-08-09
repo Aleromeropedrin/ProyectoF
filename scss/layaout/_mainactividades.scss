@@ -1,0 +1,39 @@
+.fondo_main{
+    background-image: url(../assets/imagenes/fondo_cancha.png);
+    background-repeat: no-repeat;
+    background-size:100% 100%; 
+}
+.cards-actividades{
+    @include grid (1fr 1fr 1fr, 1fr,center);
+    padding: 30px;
+    justify-items: center;
+    padding: 20px;
+    gap: 5%;
+
+
+.padel{
+    width: 330px;
+    height: 360px;
+    border-radius: 25px;
+}
+.cardspadel{
+    text-align: center;
+    background-color: aquamarine;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: black;
+
+}
+.cardsjugador {
+    @extend .cardspadel;
+}
+.cardshockey {
+    @extend .cardspadel;
+}
+.hockey {
+    @extend .padel;
+}
+.jugador {
+    @extend .padel;
+}
+}
