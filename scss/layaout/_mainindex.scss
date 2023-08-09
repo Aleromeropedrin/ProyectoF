@@ -1,6 +1,6 @@
-.fondo {
-    background-color: $backgroud-principal;
-}
+    .fondo {
+        background-color: $backgroud-principal;
+        }
     .titulo {
         display: grid;
         width: 100%;
@@ -10,74 +10,33 @@
         font-family: Arial, Helvetica, sans-serif;
         justify-items: center;
         align-items: center;
-    }
+        }
     .textoinicio{
         background-color: rgb(6, 6, 88);
         color: white;
         font-size:25px;
         border-radius: 10%;
         text-align: center;
-        padding: 10px;
-        width: 520px;
+        padding: 20px;
+        width: 500px;
         padding-top: 15px;
-    }
+        }
 
     .cards-flexmain {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         padding-top: 65px;
+        padding: 40px;
         }
-
     .complejo{
-    width: 700px;
-    height: 500px;
-    border-radius: 10%;
-    padding: 20px;
-    }
-    .section-cards {
-        display: flex;
-        padding: 28px;
-        height: auto;
         width: 100%;
-    }
-
-.cardsfutbol5 {
-        color: $color-text-principal;
-        background-color:$backgroud-principal;
-        border-radius: 15%;
-        transition: transform 0.4s;
+        height: 500px;
+        border-radius: 10%;
         padding: 20px;
-    }
-
-    .cardsfutbol5:hover {
-        transform: scale(1.1);
-        background-color: rgb(153, 154, 154);
-        color: black;
-    }
-
-    li {
-        margin-bottom: 40px;
-        list-style-type: none;
-    }
-
-    /*Actividades*/
-    .cardsactividades {
-        @extend .cardsfutbol5
-    }
-
-    .cardsactividades:hover {
-        transform: scale(1.1);
-        background-color: rgb(153, 154, 154);
-        color: black;
-    }
-
-   .cardseventosdos {
-        @extend .cardsfutbol5
-    }
-
+        }
     .cardseventosdos:hover {
         transform: scale(1.1);
         background-color: rgb(153, 154, 154);
         color: black;
-    }
+        }

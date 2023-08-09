@@ -8,8 +8,10 @@
     }
 
     .titulo {
-        font-size: 19px;
-    }
+        display: flex;
+        flex-direction: row;
+        font-size: 18px;
+        }
 
     .section-cards {
         display: grid;
@@ -21,21 +23,24 @@
         align-self: center;
     }
 
-    .cardsactividades {
+    .cards-actividades {
+        display: flex;
+        flex-direction: column;
         align-self: center;
         text-align: center;
         color: $color-text-principal;
         background-color: $backgroud-principal;
         border-radius: 10%;
         font-family: sans-serif;
-        width: 200px;
+        width: 90%px;
         height: auto;
         padding-top: 82px;
+        gap: 25px;
+        font-size: 16px;
     }
 
     .cards-grid {
         display: flex;
-        justify-content: center;
         justify-content: center;
         padding: 78px;
         column-gap: 15px;
@@ -55,11 +60,27 @@
 
     .cards-flexmain {
         display: grid;
-        grid-template-columns: repeat (2, 1fr);
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+        justify-content: center;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 30px;
         column-gap: 20px;
+        }
+    .textoinicio{
+        align-self: center;
+        justify-content: center;
+        padding-left: 60px;
+        padding-right: 30px;
+        width: 100%;
+        height: auto;
+        padding-bottom: 15px;
     }
-
+    .complejo{
+        width: 100%;
+        height: auto;
+    }
     .cardseventosdos {
         align-self: center;
         text-align: center;
@@ -72,7 +93,12 @@
         padding-top: 75px;
         gap: 20px;
     }
-
+    .cards-rse{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+}
     .custom-bg {
         display: flex;
         color: $color-text-principal;
@@ -87,5 +113,4 @@
         padding: 20px;
         margin: 5px 0;
     }
-
 }
