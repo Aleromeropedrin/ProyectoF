@@ -87,11 +87,6 @@
         padding-top: 75px;
         gap: 20px;
     }
-    .cards-rse {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     .custom-bg {
         display: flex;
         color: $color-text-principal;
@@ -104,13 +99,29 @@
         padding: 20px;
         margin: 5px 0px;
     }
-    .cards-rse {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 30px;
-        padding-top: 20px;
-        justify-items: center;
-        gap: 25px;
+        .cards-rse{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
+            padding-top: 20px;
+            justify-items: center;
+            gap: 25px;
+            width: 80%;
+            height: auto;
+        }    
+    
+    .imgvision{
+        width: 80px;
+        height: 180px;
+        border-radius: 10%;
+        }
+    .visiontexto {
+        width: 100%;
+        height: 280px;
+        padding-top: 15px;
+        font-size: 30px;
+        color: rgb(8, 38, 93);
     }
+    
 }

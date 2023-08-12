@@ -4,7 +4,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
     padding: 30px;
-    padding-top: 20px;
+    padding-top: 120px;
     justify-items: center;
     gap: 25px;
 
@@ -27,9 +27,7 @@
     color: rgb(8, 38, 93);
     
 }
-.cardsmision {
-    @extend .imgvision;
-}
+
 .misiontexto {
     @extend .visiontexto;
 }

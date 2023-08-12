@@ -27,11 +27,27 @@
         padding-top: 20px;
         justify-items: center;
         gap: 25px;
-        font-size: 15px;
         width: 100%;
         height: auto;
     }    
-
+    .imgvision{
+        width: 75%;
+        height: auto;
+        border-radius: 10%;
+        }
+    .visiontexto {
+        align-self: center;
+        text-align: center;
+        color: rgb(50, 5, 5);
+        background-color: rgb(141, 238, 231);
+        border-radius: 10%;
+        font-family:'Times New Roman', Times, serif;
+        width: 110%;
+        height: 280px;
+        padding-top: 15px;
+        font-size: 30px;
+        color: rgb(8, 38, 93);
+    }
     .section-cards {
         display: flex;
         justify-content: center;
@@ -61,6 +77,10 @@
         height: auto;
         padding-left: 20px;
     }
+    .misiontexto{
+        width: 100%;
+        height: 100px;
+        }
     .custom-bg {
         display: flex;
         flex-direction: column;

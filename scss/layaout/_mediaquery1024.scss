@@ -21,6 +21,14 @@
         height: 620px;
         font-weight: bold;
         padding: 20px;
-        margin: 5px 0;
+        margin: 5px 0px;
+    }
+    .cards-actividades{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        width: 100%;
+        height: auto;
+        border-radius: 10%;
     }
 }

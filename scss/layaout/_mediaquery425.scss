@@ -70,4 +70,33 @@
         padding: 30px;
         margin: 15px 45px;
     }
+    .padel{
+        width: 100%;
+        height: 280px;
+        border-radius: 25px;
+    }
+    .cardspadel{
+        text-align: center;
+        background-color: aquamarine;
+        font-size: 15px;
+        color: black;
+    
+    }
+    .cards-actividades{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+        width: 100%;
+        height: auto;
+        border-radius: 10%;
+    }
+    .cards-rse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    
 }
