@@ -1,0 +1,19 @@
+@media (max-width: 418px){
+.custom-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $color-text-principal;
+    background-color: $backgroud-principal;
+    border-radius: 10%;
+    justify-items: center;
+    place-items: center;
+    align-items: center;
+    width: 75%;
+    height: auto;
+    font-weight: bold;
+    padding: 20px;
+    margin: 15px 0px;
+    font-size: 15px;
+}
+}

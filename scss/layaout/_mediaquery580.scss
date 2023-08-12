@@ -19,6 +19,18 @@
         padding: 58px;
         gap: 10px;
     }
+    .cards-rse{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        padding-top: 20px;
+        justify-items: center;
+        gap: 25px;
+        font-size: 15px;
+        width: 100%;
+        height: auto;
+    }    
 
     .section-cards {
         display: flex;
@@ -64,5 +76,10 @@
         font-weight: bold;
         padding: 20px;
         margin: 5px 0;
+    }
+    footer{
+        font-size: 12px;
+        padding-bottom: 5px;
+        justify-content: center;
     }
 }

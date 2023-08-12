@@ -62,7 +62,7 @@
   height: auto;
   color: black;
   background-color: #0ee696;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   justify-items: center;
   align-items: center;
 }
@@ -75,6 +75,7 @@
   text-align: center;
   padding: 20px;
   width: 500px;
+  height: auto;
   padding-top: 15px;
 }
 
@@ -110,7 +111,7 @@
   color: white;
   background-color: rgb(147, 156, 98);
   border-radius: 10%;
-  font-family: sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 18px;
   width: 200px;
   min-height: 70vh;
@@ -130,7 +131,7 @@
 }
 
 .fondo_main {
-  background-image: url(../assets/imagenes/fondo_cancha.png);
+  background-image: url("../assets/imagenes/fondo_cancha.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
@@ -156,7 +157,6 @@
   text-align: center;
   background-color: aquamarine;
   font-size: 18px;
-  font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
 }
 .cards-rse {
@@ -165,6 +165,7 @@
   grid-template-rows: 1fr 1fr 1fr;
   justify-content: center;
   padding: 30px;
+  padding-top: 20px;
   justify-items: center;
   gap: 25px;
 }
@@ -179,7 +180,7 @@
   color: rgb(50, 5, 5);
   background-color: rgb(141, 238, 231);
   border-radius: 10%;
-  font-family: sans-serif;
+  font-family: "Times New Roman", Times, serif;
   width: 400px;
   height: 280px;
   padding-top: 15px;
@@ -243,6 +244,22 @@ footer div {
     justify-content: center;
     align-items: center;
   }
+  .custom-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: rgb(10, 10, 10);
+    border-radius: 10%;
+    justify-items: center;
+    place-items: center;
+    align-items: center;
+    width: 100%;
+    height: 620px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 5px 0;
+  }
 }
 @media (max-width: 768px) {
   .menu {
@@ -258,13 +275,14 @@ footer div {
     display: flex;
     flex-direction: row;
     font-size: 18px;
+    justify-content: center;
   }
   .section-cards {
     display: grid;
     grid-template-columns: repeat 200px, 100px, 100px;
     grid-template-rows: 1fr;
     column-gap: 20px;
-    width: 200vw;
+    width: 100%;
     height: 100%;
     align-self: center;
   }
@@ -276,7 +294,7 @@ footer div {
     color: white;
     background-color: rgb(10, 10, 10);
     border-radius: 10%;
-    font-family: sans-serif;
+    font-family: "Times New Roman", Times, serif;
     width: 90% px;
     height: auto;
     padding-top: 82px;
@@ -295,7 +313,7 @@ footer div {
     color: white;
     background-color: rgb(10, 10, 10);
     border-radius: 10%;
-    font-family: sans-serif;
+    font-family: "Times New Roman", Times, serif;
     width: 200px;
     height: auto;
     padding-top: 82px;
@@ -329,7 +347,7 @@ footer div {
     color: white;
     background-color: rgb(10, 10, 10);
     border-radius: 10%;
-    font-family: sans-serif;
+    font-family: "Times New Roman", Times, serif;
     width: 200px;
     height: auto;
     padding-top: 75px;
@@ -346,13 +364,20 @@ footer div {
     background-color: rgb(10, 10, 10);
     border-radius: 10%;
     justify-items: center;
-    place-items: center;
     align-items: center;
-    width: 650px;
+    width: 100%;
     height: auto;
-    font-weight: bold;
     padding: 20px;
-    margin: 5px 0;
+    margin: 5px 0px;
+  }
+  .cards-rse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    padding-top: 20px;
+    justify-items: center;
+    gap: 25px;
   }
 }
 @media (max-width: 580px) {
@@ -374,6 +399,18 @@ footer div {
     justify-content: space-evenly;
     padding: 58px;
     gap: 10px;
+  }
+  .cards-rse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    padding-top: 20px;
+    justify-items: center;
+    gap: 25px;
+    font-size: 15px;
+    width: 100%;
+    height: auto;
   }
   .section-cards {
     display: flex;
@@ -418,6 +455,11 @@ footer div {
     padding: 20px;
     margin: 5px 0;
   }
+  footer {
+    font-size: 12px;
+    padding-bottom: 5px;
+    justify-content: center;
+  }
 }
 @media (max-width: 425px) {
   .menu {
@@ -435,7 +477,17 @@ footer div {
     justify-content: center;
   }
   .titulo {
-    font-size: 16px;
+    font-size: 12px;
+    justify-content: center;
+  }
+  .textoinicio {
+    width: 330px;
+    height: 270px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .section-cards {
     flex-direction: column;
@@ -473,11 +525,82 @@ footer div {
     justify-items: center;
     place-items: center;
     align-items: center;
-    width: 280px;
+    width: 70%;
     height: auto;
     font-weight: bold;
-    padding: 20px;
-    margin: 5px 0;
+    padding: 30px;
+    margin: 15px 45px;
+  }
+}
+@media (max-width: 425px) {
+  .menu {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 3px;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+  }
+  .titulo {
+    font-size: 12px;
+    justify-content: center;
+  }
+  .textoinicio {
+    width: 330px;
+    height: 270px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .section-cards {
+    flex-direction: column;
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+  }
+  .cards-grid {
+    flex-direction: column;
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+  }
+  .cards-flexmain {
+    flex-direction: column;
+    font-size: 16px;
+    display: flex;
+  }
+  .cards-flexmainnovedades {
+    flex-direction: column;
+    font-size: 10px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+  }
+  .custom-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: rgb(10, 10, 10);
+    border-radius: 10%;
+    justify-items: center;
+    place-items: center;
+    align-items: center;
+    width: 70%;
+    height: auto;
+    font-weight: bold;
+    padding: 30px;
+    margin: 15px 45px;
   }
 }
 @media (max-width: 320px) {
@@ -489,14 +612,11 @@ footer div {
     justify-content: center;
     align-items: center;
   }
-  .titulo {
-    font-size: 12px;
-  }
   .cards-grid {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
-    padding: 78px;
+    padding: 38px;
   }
   .section-cards {
     display: flex;
@@ -518,6 +638,15 @@ footer div {
     font-size: 12px;
     align-items: center;
   }
+  .textoinicio {
+    width: 280px;
+    height: 260px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
   .custom-bg {
     display: flex;
     flex-direction: column;
@@ -528,11 +657,12 @@ footer div {
     justify-items: center;
     place-items: center;
     align-items: center;
-    width: 80vw;
-    height: 100%;
+    width: 80%;
+    height: auto;
     font-weight: bold;
     padding: 20px;
-    margin: 5px 0;
+    margin: 15px 25px;
+    font-size: 12px;
   }
   .cardsfutbol5 {
     align-self: center;
