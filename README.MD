@@ -1,3 +1,4 @@
+![LOGO CENTENARIO](./assets/imagenes/logo.png)
 Primer proyecto publicado y en construcción
 
 Mi nombre es Alejandro Romero.
