@@ -10,4 +10,7 @@ Boostrap asi como SASS aplicado.
 
 PRODUCTO: COMPLEJO CERRADO FUTBOL, DANZA Y EVENTOS.
 
+Profesor Maximiliano Cardenas
+Tutor Damian Laterza
+Equipo de apoyo CoderAsk (nunca caminaras solo)
 La idea es ir en el paso a paso construyendo, aprendiendo y compartiendo el desarrollo
